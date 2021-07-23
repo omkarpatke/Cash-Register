@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(188, 199, 207);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+    margin-left: 30rem;
+    height: auto;
+    background-color: #384a61;
+    box-shadow: 3px 2px 3px 1px;
+    border-radius: 3px;
+}
+.heading{
+display: flex;
+justify-content: center;
+color: white;
+font-size: 1.5rem;
+font-weight: 900;
+}
+.para{
+    margin-left: 3rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.bill-amount{
+display: flex;
+flex-direction: column;
+}
+.bill-input{
+    font-size: 1rem;
+    height: 40px;
+    width: 25vw;
+    
+}
+.btn{
+    margin-top: 1rem;
+    height: 30px;
+    width: 5vw;
+    margin-left: 9.5rem;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #627fa5;
+    color: white;
+    border: 1px solid black;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+}
+.user-cash{
+    font-size: 1rem;
+    height: 40px;
+    width: 25vw;
+}
+.cheak{
+    margin-top: 1rem;
+    height: 30px;
+    width: 5vw;
+    margin-left: 9.5rem;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.cheak:hover{
+    background-color: #627fa5;
+    color: white;
+    border: 1px solid black;
+}
+.error{
+    display: none;
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 1.2rem;
+}
+table{
+    font-size: 1.2rem;
+    padding: 1.3rem;
+    background-color: white;
+  margin-bottom: 1rem;
+}
+
+td{
+    padding: 0.4rem;
+}
+.noOfNotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* responsive part */
+@media screen and (max-width:900px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        margin: 0;
+        width: auto;
+    }
+    .heading{
+        display: flex;
+        justify-content: center;
+        margin-left: 2rem;
+    }
+    .para{
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+    .bill-input{
+        display: flex;
+        justify-content: center;
+        width: 70vw;
+        margin-left: 0rem;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        width: 6rem;
+        align-items: center;
+        margin-left: 6rem;
+    }
+.user-cash{
+    display: flex;
+        justify-content: center;
+        width: 70vw;
+        margin-left: 0rem;
+}
+.cheak{
+    display: flex;
+        justify-content: center;
+        width: 6rem;
+        align-items: center;
+        margin-left: 6rem;
+}
+table{
+    width: auto;
+    height: 2vh;
+    font-size: small;
+    
+}
+}
