@@ -28,7 +28,7 @@ font-weight: 900;
     font-size: 1rem;
     font-weight: 800;
 }
-.bill-amount{
+.bill-container{
 display: flex;
 flex-direction: column;
 }
@@ -40,6 +40,7 @@ flex-direction: column;
 }
 .btn{
     margin-top: 1rem;
+    margin-bottom: 1rem;
     height: 30px;
     width: 5vw;
     margin-left: 9.5rem;
@@ -95,14 +96,33 @@ table{
 }
 
 td{
-    padding: 0.4rem;
-}
-.noOfNotes{
-    display: flex;
+    
+padding: 0.4rem;
+    height: auto;
     justify-content: center;
     align-items: center;
+    
 }
+.noOfNotes{
+   width: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+table th td{
+    border: 1px solid black;
+    padding: 0.4rem;
+}
+th{
+    padding: -1rem;
+}
+.hidden{
+    display: none;
 
+}
+.hidden-table{
+    display: none;
+}
 
 
 /* responsive part */

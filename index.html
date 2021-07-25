@@ -8,29 +8,39 @@
 </head>
 <link rel="stylesheet" href="styles.css">
 <body>
+
     <div class="container">
         <div>
          <h2 class="heading">Welcome to cash Register Manager</h2>
         <p class="para">Enter the bill amount and cash given by the customer and know minimum no of notes to return.</p>
     </div>
 
-    <div class="bill-amount">
+
+    <div class="bill-container">
         <h2 class="heading">Bill Amount</h2>
-        <input type="number" class="bill-input" placeholder="Enter Bill Amount Here">
-        <button id="next" onclick="next()" class="btn">Next</button>
+        <input type="number" id="get-in" class="bill-input" placeholder="Enter Bill Amount Here">
+        <button id="next" class="btn">Next</button>
     </div>
 
-   <div class="inputbox">
+
+
+   <div class="inputbox hidden">
        <h2 class="heading">Cash Given</h2>
        <input type="number" placeholder="Enter Cash Given by Customer" class="user-cash">
-       <button class="cheak" onclick="cheak()">Cheak</button>
+       <button class="cheak"</div>Cheak</button>
+       <p class="resultText"></p>
    </div>
+
+
    <h3 class="error">error</h3>
-   <div id="output">
-  <h2 id="returnChange"></h2>
-  <table class="table">
+
+
+   <h2 id="returnChange"></h2>
+   <div id="output" class="hidden table">
+    <div class="returnDiv ">
+     <table class="table">
     <tbody>
-<tr>
+    <tr>
     <th>No of the Note</th>
     <td class="noOfNotes"></td>
     <td class="noOfNotes"></td>
@@ -40,6 +50,7 @@
     <td class="noOfNotes"></td>
     <td class="noOfNotes"></td>
     <td class="noOfNotes"></td>
+    
 </tr>
 <tr>
     <th>Note</th>
@@ -54,7 +65,9 @@
 </tr>
     </tbody>
  </table>
+</div>
    </div>
    </div>
+   <script src="App.js"></script>
 </body>
 </html>
