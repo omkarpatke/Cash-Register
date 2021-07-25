@@ -45,8 +45,6 @@ function clickhandler2 (){
                 }
             }
         }
-    }else{
-        alert('Amount is Less than Bill Value');
     }
     
     
