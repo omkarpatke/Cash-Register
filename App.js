@@ -43,6 +43,8 @@ function clickhandler2 (){
                         remainingAmount = remainingAmount % notes[i];
                     }
                 }
+            }else{
+                alert('Bill Amount is greater than given Cash');
             }
         }
     }
