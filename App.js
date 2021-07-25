@@ -9,7 +9,7 @@ var Returntable = document.querySelector(".returnDiv");
 var returnchange = document.querySelector("#output");
 const notes = [2000, 500, 100, 50, 20, 10, 5, 1];
 
-var noOfnotes = document.querySelector(".noOfNotes");
+var noOfnotes = document.querySelectorAll(".noOfNotes");
 
 btnNext.addEventListener("click",clickHandler);
 
@@ -39,7 +39,7 @@ function clickhandler2 (){
                         var change = Math.floor(remainingAmount / notes[i])
                         console.log(`${change} note of ${notes[i]}`)
                         Table.classList.remove('hidden');
-                          noOfnotes.innerHTML= `${change}`
+                          noOfnotes[i].innerHTML= `${change}`
                         remainingAmount = remainingAmount % notes[i];
                     }
                 }
@@ -52,4 +52,3 @@ function clickhandler2 (){
     
 
 }
-
