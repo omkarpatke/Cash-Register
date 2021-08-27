@@ -15,12 +15,14 @@ btnNext.addEventListener("click",clickHandler);
 
 
 function clickHandler () {
-    
     if(inputMain.value >= 1) {
-        return billInput.classList.remove('hidden')
-    }else{
+        return billInput.classList.remove('hidden'),
+        btnNext.classList.add('hidden');
+    }
+    else{
      alert('Amount of bill cannot be less than 0');
     }
+    
 }
 
 btnCheak.addEventListener("click" , clickhandler2)
@@ -38,6 +40,7 @@ function clickhandler2 (){
                     while(remainingAmount >= notes[i]){
                         var change = Math.floor(remainingAmount / notes[i])
                         console.log(`${change} note of ${notes[i]}`)
+                       
                         Table.classList.remove('hidden');
                           noOfnotes[i].innerHTML= `${change}`
                         remainingAmount = remainingAmount % notes[i];
